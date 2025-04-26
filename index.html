@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<!--
+/**
+ * @author Kolla Harsha
+ * @created April 25, 2025
+ * @copyright LoanSphere Application System
+ */
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LoanSphere - Your Personal Loan Management System">
+    <title>LoanSphere</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/profile.html">Profile</a></li>
+                <li><a href="/services.html">Services</a></li>
+                <li><a href="/help.html">Help?</a></li>
+                <li><button class="btn" id="loginBtn" onclick="window.location.href='login.html'">Login / Signup</button></li>
+            </ul>
+            <div class="nav-right">
+                <span class="logo">Loan<span>Sphere</span></span>
+            </div>
+        </nav>
+    </header>
+
+    
+    <!-- Main Dashboard Section -->
+<section class="dashboard">
+    <div class="welcome-message">
+        <h1>Welcome to LoanSphere!</h1>
+        <div class="welcome-content">
+            <p class="main-message">Stay on top of your finances — monitor your application, track repayments, and more!</p>
+            
+            <div class="quick-stats">
+                <div class="stat-item">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Credit Score: <strong>750</strong></span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-wallet"></i>
+                    <span>Available Credit: <strong>₹50,000</strong></span>
+                </div>
+            </div>
+<!-- code by kolla harsha -->
+            <div class="quick-actions">
+                <h3>Quick Actions:</h3>
+                <div class="action-buttons">
+                    <button class="action-btn" onclick="window.location.href='loan-application.html'">
+                        <i class="fas fa-file-alt"></i>
+                        Apply for Loan
+                    </button>
+                    <button class="action-btn" onclick="window.location.href='track-loan-status.html'">
+                        <i class="fas fa-search"></i>
+                        Track Application
+                    </button>
+                    <button class="action-btn" onclick="window.location.href='payment.html'">
+                        <i class="fas fa-money-bill-wave"></i>
+                        Make Payment
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Loan Status Section -->
+        <div class="loan-status">
+            <h2>Loan Status</h2>
+            <div class="progress-bar">
+                <div class="progress" style="width: 75%;"></div>
+            </div>
+            <div class="progress-steps">
+                <div class="step completed">
+                    <span>Applied</span>
+                </div>
+                <div class="step completed">
+                    <span>Documents</span>
+                </div>
+                <div class="step active">
+                    <span>Processing</span>
+                </div>
+                <div class="step">
+                    <span>Paid Out</span>
+                </div>
+            </div>
+            <div class="status-text">
+                <div>
+                    <p>Application Number: <strong>LN-2025-001</strong></p>
+                    <p>Amount: <strong>₹50000</strong></p>
+                </div>
+                <div class="status-badge processing">Processing</div>
+            </div>
+        </div>
+
+        <!-- Loan Details Section -->
+        <div class="loan-details">
+            <h2>Your Loan Details</h2>
+            <p><strong>Loan Amount:</strong> &#8377;5000</p>
+            <p><strong>Interest Rate:</strong> 5.5%</p>
+            <p><strong>Loan Term:</strong> 36 months</p>
+            <p><strong>Approval Date:</strong> April 15, 2025</p>
+            <button class="btn" id="loanDetailsBtn" onclick="window.location.href='loan-details.html'">View Full Details</button>
+            
+        </div>
+
+        <!-- Repayment Calendar Section -->
+        <div class="repayment-calendar">
+            <h2>Your Repayment Schedule</h2>
+            <div class="calendar">
+                <div class="calendar-date">May 1</div>
+                <div class="calendar-date">May 15</div>
+                <div class="calendar-date">May 30</div>
+            </div>
+            <button class="btn" id="calendarBtn" onclick="window.location.href='calendar.html'">View Full Calendar</button>
+
+        </div>
+
+        <!-- Payment Summary Section -->
+        <div class="payment-summary">
+            <h2>Payment Summary</h2>
+            <p><strong>Next Payment Due:</strong> May 1, 2025</p>
+            <p><strong>Amount Due:</strong> &#8377;250</p>
+            <p><strong>Remaining Balance:</strong> &#8377;4500</p>
+            <button class="btn" id="payNowBtn" onclick="window.location.href='payment.html'">Make Payment</button>
+
+        </div>
+
+        <!-- Loan History Section -->
+        <div class="loan-history">
+            <h2>Loan History</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Amount Paid</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>April 15, 2025</td>
+                        <td>&#8377;500</td>
+                        <td>Paid</td>
+                    </tr>
+                    <tr>
+                        <td>March 15, 2025</td>
+                        <td>&#8377;500</td>
+                        <td>Paid</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Loan Calculator Section -->
+        <div id="loan-calculator">
+            <h2>Loan Repayment Calculator</h2>
+            <form id="loanForm">
+                <label for="loanAmount">Loan Amount (₹):</label>
+                <input type="number" id="loanAmount" required>
+            
+                <label for="interestRate">Interest Rate (%):</label>
+                <input type="number" id="interestRate" step="any" required>
+            
+                <label for="loanTerm">Loan Term (Years):</label>
+                <input type="number" id="loanTerm" required>
+            
+                <button type="submit" class="btn">Calculate</button>
+            </form>
+            <div class="calculated-result" id="calculatedResult">
+                <h3>Monthly Payment: ₹0.00</h3>
+            </div>
+        </div>
+
+        <!-- Notifications Section -->
+        <div class="notifications">
+            <h2 id="notificationsTitle">Recent Notifications</h2>
+            <div class="notification">
+                <span class="notification-date">April 18, 2025</span>
+                <p>Your loan application has been successfully reviewed and is under approval process.</p>
+            </div>
+            <div class="notification">
+                <span class="notification-date">April 16, 2025</span>
+                <p>Your document submission is complete. Awaiting approval.</p>
+            </div>
+            <a href="notifications.html" class="btn" id="notificationsBtn">View All Notifications</a>
+
+        </div>
+
+        <!-- Chat Widget -->
+        <div class="chatbot" id="chatWindow">
+            <div class="chat-header">
+                <span class="chat-title">LoanBot</span>
+                <button class="close-btn" id="closeChat"><i class="fa fa-times"></i></button>
+            </div>
+            <div class="chat-body"></div>
+            <div class="chat-footer">
+                <div class="chat-options">
+                    <button class="message-option">Track Loan Status</button>
+                    <button class="message-option">Payment Details</button>
+                    <button class="message-option">Loan Application Help</button>
+                </div>
+            </div>
+        </div>
+        <div id="chatbotIcon" class="chat-icon"><i class="fa fa-comments"></i></div>
+    </section>
+
+    
+    <footer class="footer">
+        <p>&copy; 2025 Loan Application System. All rights reserved.</p>
+    </footer>
+
+    
+    <script src="script.js"></script>
+    <script src="chatbot.js"></script>
+    
+</body>
+</html>
+<!--
+/**
+ * @author Kolla Harsha
+ * @created April 25, 2025
+ * @copyright LoanSphere Application System
+ */
+-->

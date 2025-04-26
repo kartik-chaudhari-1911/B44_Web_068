@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--
+/**
+ * @author Kolla Harsha
+ * @created April 25, 2025
+ * @copyright LoanSphere Application System
+ */
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LoanSphere - Track Your Loan Status">
+    <title>Track Loan Status</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/profile.html">Profile</a></li>
+                <li><a href="/services.html">Services</a></li>
+                <li><a href="/help.html">Help?</a></li>
+                <li><button class="btn" id="loginBtn" onclick="window.location.href='login.html'">Login / Signup</button></li>
+            </ul>
+            <div class="nav-right">
+                <span class="logo">Loan<span>Sphere</span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Loan Status Tracker -->
+    <section class="loan-status">
+        <h1>Track Your Loan Status</h1>
+        <form id="loanStatusForm">
+            <label for="loanId">Enter Loan ID:</label>
+            <input type="text" id="loanId" name="loanId" required>
+
+            <button type="submit" class="btn">Track Status</button>
+        </form>
+
+       
+        <div class="status-info">
+            <h2>Loan Status</h2>
+            <p id="statusMessage">Please enter your Loan ID to track the status.</p>
+            <div id="statusDetails" style="display:none;">
+                <p><strong>Status:</strong> <span id="status"></span></p>
+                <p><strong>Approval Date:</strong> <span id="approvalDate"></span></p>
+                <p><strong>Amount Approved:</strong> ₹<span id="approvedAmount"></span></p>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer class="footer">
+        <p>&copy; 2025 Loan Application System. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!--
+/**
+ * @author Kolla Harsha
+ * @created April 25, 2025
+ * @copyright LoanSphere Application System
+ */
+-->

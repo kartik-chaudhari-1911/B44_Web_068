@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!--
+/**
+ * @author Kolla Harsha
+ * @created April 25, 2025
+ * @copyright LoanSphere Application System
+ */
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LoanSphere - Profile</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <nav>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/profile.html">Profile</a></li>
+        <li><a href="/services.html">Services</a></li>
+        <li><a href="/help.html">Help?</a></li>
+        <li><button class="btn" id="loginBtn" onclick="window.location.href='login.html'">Login / Signup</button></li>
+      </ul>
+      <div class="nav-right">
+        <span class="logo">Loan<span>Sphere</span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Profile Section -->
+  <section class="dashboard">
+    <!-- Profile Photo Upload -->
+    <div>
+      <h2>Your Profile</h2>
+      <div style="text-align:center;">
+        <img src="assets/default-avatar.png" alt="User Photo" style="width:120px;height:120px;border-radius:50%;border:2px solid #0984e3;">
+        <input type="file" id="uploadPhoto" style="margin-top:10px;">
+      </div>
+    </div>
+
+    <!-- Profile Info -->
+    <div>
+      <h2>Basic Information</h2>
+      <form>
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" value=" ">
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" value="">
+
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" value="+91 ">
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" value="">
+
+        <button type="submit" class="btn">Save Changes</button>
+      </form>
+    </div>
+
+    <!-- Address -->
+    <div>
+      <h2>Address</h2>
+      <form>
+        <label for="address">Street Address:</label>
+        <input type="text" id="address" value="">
+
+        <label for="city">City:</label>
+        <input type="text" id="city" value="">
+
+        <label for="state">State:</label>
+        <input type="text" id="state" value="">
+
+        <label for="zip">ZIP Code:</label>
+        <input type="text" id="zip" value="">
+
+        <button type="submit" class="btn">Update Address</button>
+      </form>
+    </div>
+
+    <!-- Account Preferences -->
+    <div>
+      <h2>Account Preferences</h2>
+      <form>
+        <label for="language">Preferred Language:</label>
+        <select id="languageSelect">
+            <option value="en">English</option>
+            <option value="hi">हिंदी</option>
+            <option value="te">తెలుగు</option>
+            <option value="ta">தமிழ்</option>
+            <option value="kn">ಕನ್ನಡ</option>
+        </select>
+        
+        <button id="themeToggle">Toggle Theme</button>
+        
+
+        <label for="theme">Theme:</label>
+        <select id="theme">
+          <option selected>Light</option>
+          <option>Dark</option>
+        </select>
+
+        <button class="btn">Save Preferences</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Loan Application System. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+<!--
+/**
+ * @author Kolla Harsha
+ * @created April 25, 2025
+ * @copyright LoanSphere Application System
+ */
+-->

@@ -1,0 +1,156 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+/**
+ * @author Kolla Harsha
+ * @created April 25, 2025
+ * @copyright LoanSphere Application System
+ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: #fff;
+  background: url('assets/background1.jpg') no-repeat center center fixed;
+}
+
+.logo-container {
+  margin-bottom: 20px;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+  color: #00f0ff;
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: 1px;
+}
+
+.logo span {
+  color: #fff;
+}
+
+.login-box {
+  background: #ffffffdd;
+  color: #333;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  text-align: center;
+}
+
+.login-box h2 {
+  margin-bottom: 25px;
+}
+
+.login-box label {
+  display: block;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+
+.btn {
+  background: #0984e3;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #075cb0;
+}
+
+.or {
+  margin: 15px 0 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.social-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+/**
+ * @author Kolla Harsha
+ * @created April 25, 2025
+ * @copyright LoanSphere Application System
+ */
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.social-btn i {
+  margin-right: 10px;
+}
+
+.google {
+  background: #db4437;
+}
+.google:hover {
+  background: #c23321;
+}
+
+.twitter {
+  background: #1da1f2;
+}
+.twitter:hover {
+  background: #0c85d0;
+}
+
+.facebook {
+  background: #3b5998;
+}
+.facebook:hover {
+  background: #2d4373;
+}
+
+.signup-link {
+  margin-top: 15px;
+  font-size: 14px;
+}
+.signup-link a {
+  color: #0984e3;
+  text-decoration: none;
+}
+.signup-link a:hover {
+  text-decoration: underline;
+}
+/**
+ * @author Kolla Harsha
+ * @created April 25, 2025
+ * @copyright LoanSphere Application System
+ */
