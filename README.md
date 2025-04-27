@@ -41,11 +41,8 @@ Develop an **intuitive loan application portal** where users can:
 
 ### 4. 💡 Future Enhancements
 - Integrate with a backend API for real application data.
-
 - Enable push notifications for payment reminders.
-
 - Add user authentication and profile management.
-
 - Implement dark mode toggle.
 
 ## 🛠️ Tech Stack
@@ -57,16 +54,16 @@ Develop an **intuitive loan application portal** where users can:
 
 ## 🚀 How to Run Locally
 
-# Clone the repository
+**Clone the repository**
 git clone https://github.com/kartik-chaudhari-1911/B44_Web_068.git
 
-# Navigate to the project directory
+**Navigate to the project directory**
 cd B44_Web_068
 
-# Install dependencies
+**Install dependencies**
 npm install
 
-# Start the development server
+**Start the development server**
 npm start
 
 
