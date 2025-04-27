@@ -54,16 +54,15 @@ Develop an **intuitive loan application portal** where users can:
 
 ## 🚀 How to Run Locally
 
-**Clone the repository**
-git clone https://github.com/kartik-chaudhari-1911/B44_Web_068.git
+```bash
+# Clone the repository
+git clone https://github.com/your-username/loan-application-portal.git
 
-**Navigate to the project directory**
-cd B44_Web_068
+# Navigate to the project directory
+cd loan-application-portal
 
-**Install dependencies**
+# Install dependencies
 npm install
 
-**Start the development server**
+# Start the development server
 npm start
-
-
