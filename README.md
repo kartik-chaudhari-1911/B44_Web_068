@@ -2,7 +2,7 @@
 
 A modern, intuitive **Loan Application System** that simplifies the loan application process, enables real-time tracking of applications, and helps users manage their repayment schedules with ease.
 
-🔗 **Live Demo:** [Loan Application Portal](https://loan-sphere.netlify.app/)
+🔗 **Live Demo:** [Loan Sphere](https://loan-sphere.netlify.app/)
 
 ---
 
